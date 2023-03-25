@@ -1,0 +1,26 @@
+{
+  "name": "test-runner",
+  "version": "1.0.0",
+  "description": "test-runner",
+  "types": "./dist/index.d.ts",
+  "main": "index.js",
+  "module": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "test":"node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.8",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "esbuild": "^0.17.13",
+    "glob": "^9.3.2"
+  }
+}
